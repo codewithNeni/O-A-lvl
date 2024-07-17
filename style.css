@@ -15,13 +15,21 @@ body {
 }
 
 
+hr{
+    background-color: black;
+    height: 2px;
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     color: white;
-    background-color: white;
     
 }
 
@@ -228,7 +236,7 @@ body {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     background: url('Assets/Hero-img.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
@@ -263,7 +271,9 @@ span{
     z-index: 2;
     padding: 20px;
     width: 60%;
+    margin-top: 100px;
 }
+
 
 .hero-content h1 {
     font-size: 2.8rem;
@@ -276,17 +286,19 @@ span{
     color: rgba(255, 255, 255, 0.938);
 }
 
-
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .hero-content p {
         font-size: 1rem;
     }
-}
 
+    .hero-content {
+        width: 80%;
+    }
+}
 @media (max-width: 1080px) {
 
     .hero-section {
@@ -405,3 +417,185 @@ span{
 
 
 /* Curricular Ends here */
+
+
+.o-level {
+    margin: 20px;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+.collapsible {
+    background-color: rgb(85, 85, 197);
+    color: white;
+    margin: 20px auto;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.collapsible:hover{
+    background-color: rgb(125, 136, 236);
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+
+.o-level-left P{
+    margin-top: 30px;
+}
+
+.o-level-left h2{
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #FF9534;
+}
+
+.o-level-left,
+.o-level-right {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.o-level-left {
+    flex: 1;
+    line-height: 30px;
+}
+
+.o-level-right {
+    flex: 1;
+}
+
+.o-level-right img {
+    width: 80%;
+    margin-left: 100px;
+}
+
+ul {
+    list-style-type: circle;
+    padding: 0;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .o-level {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .o-level-left,
+    .o-level-right {
+        flex: 1 1 100%;
+    }
+    .o-level-right img {
+        width: 90%;
+        margin-left: 20px;
+    }
+}
+
+/* A lvl Curriculum */
+
+.a-level {
+    margin: 20px;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+.collapsible {
+    background-color: rgb(85, 85, 197);
+    color: white;
+    margin: 20px auto;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.collapsible:hover{
+    background-color: rgb(125, 136, 236);
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+
+.a-level-left P{
+    margin-top: 30px;
+}
+
+.a-level-left h2{
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #FF9534;
+}
+
+.a-level-left,
+.a-level-right {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.a-level-left {
+    flex: 1;
+    line-height: 30px;
+}
+
+.a-level-right {
+    flex: 1;
+}
+
+.a-level-right img {
+    width: 500px;
+    margin-left: 100px;
+}
+
+ul {
+    list-style-type: circle;
+    padding: 0;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .a-level {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .a-level-right img {
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .a-level-left,
+    .a-level-right {
+        flex: 1 1 100%;
+    }
+}
