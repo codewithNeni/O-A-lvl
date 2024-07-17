@@ -15,7 +15,7 @@ body {
 }
 
 
-hr{
+hr {
     background-color: black;
     height: 2px;
     width: 80%;
@@ -30,7 +30,7 @@ hr{
     align-items: center;
     padding: 10px;
     color: white;
-    
+
 }
 
 
@@ -258,11 +258,11 @@ hr{
     z-index: 1;
 }
 
-span{
+span {
     color: #FF9534;
 }
 
-.arrow{
+.arrow {
     color: black;
 }
 
@@ -299,6 +299,7 @@ span{
         width: 80%;
     }
 }
+
 @media (max-width: 1080px) {
 
     .hero-section {
@@ -351,18 +352,21 @@ span{
 
 .text-content {
     flex: 1;
-    margin-right: 20px; /* Space between text and image */
+    margin-right: 20px;
+    /* Space between text and image */
 }
 
 .image-content {
     flex: 1;
-    max-width: 500px; /* Adjust based on your design */
+    max-width: 500px;
+    /* Adjust based on your design */
 }
 
 .image-content img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Optional: adds rounded corners to the image */
+    border-radius: 8px;
+    /* Optional: adds rounded corners to the image */
 }
 
 .Cirriculum-heading {
@@ -384,12 +388,14 @@ span{
     }
 
     .Cirriculum-content {
-        flex-direction: column-reverse; /* Image comes before text on mobile and tablet */
+        flex-direction: column-reverse;
+        /* Image comes before text on mobile and tablet */
     }
 
     .text-content {
         margin-right: 0;
-        margin-bottom: 20px; /* Space between text and image on mobile */
+        margin-bottom: 20px;
+        /* Space between text and image on mobile */
     }
 
     .image-content {
@@ -440,7 +446,7 @@ span{
     border-radius: 4px;
 }
 
-.collapsible:hover{
+.collapsible:hover {
     background-color: rgb(125, 136, 236);
     color: rgb(255, 255, 255);
 }
@@ -453,11 +459,11 @@ span{
     transition: max-height 0.4s ease-out;
 }
 
-.o-level-left P{
+.o-level-left P {
     margin-top: 30px;
 }
 
-.o-level-left h2{
+.o-level-left h2 {
     font-size: 2rem;
     margin-top: 20px;
     color: #FF9534;
@@ -502,6 +508,7 @@ ul {
     .o-level-right {
         flex: 1 1 100%;
     }
+
     .o-level-right img {
         width: 90%;
         margin-left: 20px;
@@ -531,7 +538,7 @@ ul {
     border-radius: 4px;
 }
 
-.collapsible:hover{
+.collapsible:hover {
     background-color: rgb(125, 136, 236);
     color: rgb(255, 255, 255);
 }
@@ -544,11 +551,11 @@ ul {
     transition: max-height 0.4s ease-out;
 }
 
-.a-level-left P{
+.a-level-left P {
     margin-top: 30px;
 }
 
-.a-level-left h2{
+.a-level-left h2 {
     font-size: 2rem;
     margin-top: 20px;
     color: #FF9534;
@@ -598,6 +605,7 @@ ul {
     .a-level-right {
         flex: 1 1 100%;
     }
+
     .collapsible {
         background-color: rgb(85, 85, 197);
         color: white;
@@ -612,7 +620,7 @@ ul {
         cursor: pointer;
         border-radius: 4px;
     }
-    
+
 }
 
 
@@ -634,18 +642,21 @@ ul {
 
 .text-content {
     flex: 1;
-    margin-right: 20px; /* Space between text and image */
+    margin-right: 20px;
+    /* Space between text and image */
 }
 
 .image-content {
     flex: 1;
-    max-width: 500px; /* Adjust based on your design */
+    max-width: 500px;
+    /* Adjust based on your design */
 }
 
 .image-content img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Optional: adds rounded corners to the image */
+    border-radius: 8px;
+    /* Optional: adds rounded corners to the image */
 }
 
 .Faculty-heading {
@@ -667,16 +678,20 @@ ul {
     }
 
     .Faculty-content {
-        flex-direction: column-reverse; /* Image comes before text on mobile and tablet */
+        flex-direction: column-reverse;
+        /* Image comes before text on mobile and tablet */
     }
 
     .text-content {
         margin-right: 0;
-        margin-bottom: 20px; /* Space between text and image on mobile */
+        margin-bottom: 20px;
+        /* Space between text and image on mobile */
+        order: 2;
     }
 
     .image-content {
         max-width: 100%;
+        order: 1;
     }
 
     .Faculty-heading {
@@ -705,11 +720,9 @@ ul {
 /* <!-- Faculty Table Starts from here --> */
 
 
-
 section.faculty {
     padding: 20px;
     text-align: center;
-    background-color: #f4f4f9;
 }
 
 .faculty-heading {
@@ -738,6 +751,8 @@ section.faculty {
 .faculty-table td {
     padding: 12px 15px;
     text-align: center;
+    /* Center align for base styles */
+    width: 50%;
 }
 
 .faculty-table th {
@@ -745,7 +760,6 @@ section.faculty {
     color: white;
     text-transform: uppercase;
     font-weight: 600;
-    text-align: center;
 }
 
 .faculty-table tr {
@@ -756,27 +770,48 @@ section.faculty {
     background-color: #f3f3f3;
 }
 
-
-
 .faculty-table tr:hover {
     background-color: #f1f1f1;
 }
 
 /* Responsive styles */
 @media (max-width: 600px) {
-    .faculty-heading {
-        margin-bottom: 20px;
-        font-size: var(--mobile-h2-font-size);
-        color: #333;
+
+    .faculty-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        font-size: 18px;
+        min-width: 300px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
     }
     
-    .faculty-table thead {
+    
+.faculty-table th,
+.faculty-table td {
+    padding: 12px 15px;
+    text-align: right;
+    /* Center align for base styles */
+    width: 50%;
+}
+
+    .faculty-heading {
+        font-size: var(--mobile-h2-font-size);
+    }
+
+    .faculty-table th {
         display: none;
     }
 
-    .faculty-table, .faculty-table tbody, .faculty-table tr, .faculty-table td {
+    .faculty-table,
+    .faculty-table tbody,
+    .faculty-table tr,
+    .faculty-table td {
         display: block;
-        width: 90%;
+        width: 100%;
+        text-align: right;
     }
 
     .faculty-table tr {
@@ -785,18 +820,22 @@ section.faculty {
 
     .faculty-table td {
         text-align: right;
-        padding-left: 50%;
+        /* Center align for mobile view */
+        padding-left: 0;
+        /* Adjust padding for mobile view */
         position: relative;
+        border-bottom: 1px solid #ddd;
     }
 
     .faculty-table td::before {
         content: attr(data-label);
         position: absolute;
         left: 0;
-        width: 50%;
+        width: 100%;
         padding-left: 10px;
         font-weight: bold;
         text-align: left;
     }
 }
+
 /* <!-- Faculty Table Ends from here --> */
