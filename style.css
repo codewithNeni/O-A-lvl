@@ -753,6 +753,7 @@ section.faculty {
     text-align: center;
     /* Center align for base styles */
     width: 50%;
+    overflow: hidden;
 }
 
 .faculty-table th {
@@ -787,15 +788,15 @@ section.faculty {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
     }
-    
-    
-.faculty-table th,
-.faculty-table td {
-    padding: 12px 15px;
-    text-align: right;
-    /* Center align for base styles */
-    width: 50%;
-}
+
+
+    .faculty-table th,
+    .faculty-table td {
+        padding: 12px 15px;
+        text-align: right;
+        /* Center align for base styles */
+        width: 50%;
+    }
 
     .faculty-heading {
         font-size: var(--mobile-h2-font-size);
